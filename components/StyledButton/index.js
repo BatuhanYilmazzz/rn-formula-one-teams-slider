@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import Styles from './styles';
 
 const StyledButton = (props) => {
-  const {type, content} = props;
+  const {type, content, car} = props;
 
   const navigation = useNavigation();
 
@@ -15,7 +15,11 @@ const StyledButton = (props) => {
     <View style={Styles.container}>
       <Pressable
         style={[Styles.button, {backgroundColor: backgroundColor}]}
-        onPress={() => navigation.navigate('Details')}>
+        onPress={() =>
+          navigation.navigate('Details', {
+            car,
+          })
+        }>
         <Text style={[Styles.text, {color: textColor}]}>{content}</Text>
       </Pressable>
     </View>

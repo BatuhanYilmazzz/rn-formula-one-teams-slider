@@ -1,14 +1,13 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 
-const DetailsScreen = () => {
+const DetailsScreen = ({route}) => {
+  let {car} = route.params;
   return (
     <View>
-      <Text>Details</Text>
+      <Text>{car.name}</Text>
     </View>
   );
 };
 
 export default DetailsScreen;
-
-const styles = StyleSheet.create({});
