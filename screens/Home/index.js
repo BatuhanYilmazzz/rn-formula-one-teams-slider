@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {Header, CarsList, CarItem, StyledButton} from '../../components';
+import {StyleSheet, View} from 'react-native';
+import {Header, CarsList} from '../../components';
 const HomeScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Header />
       <CarsList />
     </View>

@@ -1,29 +1,30 @@
+import images from '../images';
+
 export default [
   {
     id: '1',
-    name: 'Model S',
+    name: 'Redbull',
     tagline: 'Starting at $69,420',
-    image: require('../../assets/images/ModelS.jpeg'),
+    image: images.redbull,
   },
   {
     id: '2',
-    name: 'Model 3',
-    tagline: 'Order Online for',
-    taglineCTA: 'Touchless Delivery',
-    image: require('../../assets/images/Model3.jpeg'),
+    name: 'Redbull',
+    image: images.redbull2,
   },
   {
     id: '3',
-    name: 'Model X',
-    tagline: 'Order Online for',
-    taglineCTA: 'Touchless Delivery',
-    image: require('../../assets/images/ModelX.jpeg'),
+    name: 'Ferrari',
+    image: images.ferrari,
   },
   {
     id: '4',
-    name: 'Model Y',
-    tagline: 'Order Online for',
-    taglineCTA: 'Touchless Delivery',
-    image: require('../../assets/images/ModelY.jpeg'),
+    name: 'Mclaren',
+    image: images.mclaren,
+  },
+  {
+    id: '5',
+    name: 'Mclaren',
+    image: images.mclaren2,
   },
 ];
